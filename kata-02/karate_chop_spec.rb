@@ -18,3 +18,10 @@ describe KarateChop do
     karate_chop.chop([1], 2).should eq(-1)
   end
 end
+
+describe KarateChop do
+  it 'should able to find mid element at once' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2, 3], 2).should eq(1)
+  end
+end
