@@ -55,3 +55,10 @@ describe KarateChop do
     karate_chop.chop([1, 2, 3, 5, 6], 4).should eq(-1)
   end
 end
+
+describe KarateChop do
+  it 'should able to find even number elements-array element' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2], 1).should eq(0)
+  end
+end
