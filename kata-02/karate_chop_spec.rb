@@ -62,3 +62,20 @@ describe KarateChop do
     karate_chop.chop([1, 2], 1).should eq(0)
   end
 end
+
+describe KarateChop do
+  it 'should not able to find even number elements-array element' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 3], 2).should eq(-1)
+  end
+end
+
+
+describe KarateChop do
+  it 'integrate test' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2, 3, 4, 5, 6], 3).should eq(2)
+    karate_chop.chop([1, 2, 3, 4, 5, 6, 7, 8, 9], 4).should eq(3)
+    karate_chop.chop([1, 2, 3, 4, 5, 6, 7, 8, 9], 4.5).should eq(-1)
+  end
+end
