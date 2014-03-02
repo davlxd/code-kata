@@ -1,5 +1,5 @@
 class KarateChop
   def chop(array, target)
-    -1
+    return -1 if array.length = 0
   end
 end
