@@ -48,3 +48,10 @@ describe KarateChop do
     karate_chop.chop([1, 2, 3, 4, 5], 5).should eq(4)
   end
 end
+
+describe KarateChop do
+  it 'should able to find non-exist element' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2, 3, 5, 6], 4).should eq(-1)
+  end
+end
