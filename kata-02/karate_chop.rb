@@ -1,8 +1,8 @@
 class KarateChop
   def do_chop(array, target, start_index, end_index)
-    return -1 if array.length == 0
-    return 0 if array.length == 1 and array[0] == target
-    return -1 if array.length == 1 and array[0] != target
+    return -1 if start_index == end_index
+    return start_index if (end_index - start_index) == 1 and array[start_index] == target
+    return -1 if (end_index - start_index) == 1 and array[start_index] != target
 
     mid = (start_index + end_index) / 2
     if array[mid] == target
