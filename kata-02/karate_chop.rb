@@ -5,6 +5,10 @@ class KarateChop
     return -1 if array.length == 1 and array[0] != target
 
     mid = array.length / 2
-    return mid if array[mid] == target
+    if array[mid] == target
+      return mid
+    elsif array[mid] > target
+      chop(array[0...mid], target)
+    end
   end
 end
