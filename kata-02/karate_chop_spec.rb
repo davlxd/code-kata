@@ -40,3 +40,11 @@ describe KarateChop do
   end
 end
 
+
+describe KarateChop do
+  it 'should able to find element with 3 times jump' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2, 3, 4, 5], 1).should eq(0)
+    karate_chop.chop([1, 2, 3, 4, 5], 5).should eq(4)
+  end
+end
