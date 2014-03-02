@@ -32,3 +32,11 @@ describe KarateChop do
     karate_chop.chop([1, 2, 3], 1).should eq(0)
   end
 end
+
+describe KarateChop do
+  it 'should able to find element 2nd time' do
+    karate_chop = KarateChop.new
+    karate_chop.chop([1, 2, 3], 3).should eq(2)
+  end
+end
+
